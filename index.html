@@ -1,6 +1,135 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.grey-pink.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- FULL PAGE -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.7/jquery.fullPage.min.css" /> -->
 
-<!-- Material Design Lite -->
-<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
-<script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!-- // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 
+  <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+  <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.7/vendors/jquery.easings.min.js"></script> -->
+
+
+  <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+  <!-- // <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.7/vendors/jquery.slimscroll.min.js"></script> -->
+
+  <!-- // <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.7/jquery.fullPage.min.js"></script> -->
+  <!-- END FULL PAGE -->
+  <title>Jeilymar Brady</title>
+ </head>
+ <body>
+ <section class="fullPage">
+    <nav class="header">
+      <a href="#top"><p class="name">Jeilymar Brady</p></a>
+      <ul class="headerItems">
+        <a href="#about"><li id="list">About</li></a>
+        <a href="#resume"><li id="list">Resume</li></a>
+        <a href="#portfolio"><li id="list">Portfolio</li></a>
+  <!--       <li>Donut Shop</li>
+        <li>Humor</li>
+        <li>1st Sem proj 1/2</li>
+        <li>1st Sem proj 2/2</li>
+        <li>This webpage</li> -->
+        <a href="#contactMe"><li id="list">Contact</li></a>
+      </ul>
+    </nav>
+    <section class="main" class="section" id="top">
+      <img id="me" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/7/005/08a/17e/2670977.jpg">
+      <h5 class="blurb">Hi, I'm Jeily. I'm an aspiring User Experience Researcher and I love making people's lives easier through technology.<br><br>Let's make a difference together!</h5>
+      <a href="#myId" class="icon-font" id="downArrow"><span class="fontawesome-angle-down"></span></a>
+    </section>
+    <section class="aboutMe" class="section" id="about">
+
+      <div class="logo"></div>
+    </section>
+    <section class="resume" class="section" id="resume"></section>
+    <section class="portfolio" class="section" id="portfolio">
+  <!--     <p>Bunch</p>
+      <p>DonutShop</p>
+      <p>Interaction between humor and ego-depletion</p>
+      <p>1/2</p>
+      <p>2/2</p>
+      <p>This Website</p>
+      <p>Contact Me</p> -->
+      <section class="bradyBunch" class="slide"></section>
+      <section class="donutShop" class="slide"></section>
+      <section class="humor" class="slide"></section>
+      <section class="oneoftwo" class="slide"></section>
+      <section class="twooftwo" class="slide"></section>
+      <section class="thisWebpage" class="slide"></section>
+    </section>
+    <section class="contact" class="section" id="contact">
+      <!-- <div class="contact" id="contact"> -->
+    <!-- <h3 class="headerC">Contact</h3>
+   -->    <div id="emailme">
+   <h3 class="headerC" id="contactMe">Contact</h3>
+      <form id="sendemail" action="MAILTO:jeilymarb@gmail.com" method="post" enctype="text/plain">
+        <fieldset class="email_form">
+          <legend>Send me an email</legend>
+          <!-- Simple Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+            <input class="mdl-textfield__input" type="text" name="name"/>
+            <label class="mdl-textfield__label" for="username">Full name..</label>
+          </div>
+        <!-- Simple Textfield -->
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+            <input class="mdl-textfield__input" type="text" name="mail" />
+            <label class="mdl-textfield__label" for="useremail">Email..</label>
+          </div>
+        <!-- Simple Textfield -->
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label textfield-demo">
+            <input class="mdl-textfield__input" type="text" id="topic" />
+            <label class="mdl-textfield__label" for="topic">Subject..</label>
+          </div>
+        <!-- Numeric Textfield -->
+          <div class="mdl-textfield mdl-js-textfield textfield-demo">
+            <textarea class="mdl-textfield__input" type="text" name="comment" value="your comment" size="50" rows= "2" id="sample5" ></textarea>
+            <label class="mdl-textfield__label" for="sample5">Message..</label>
+          </div>
+        </form>
+        <br>
+        <!-- Accent-colored raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          Send
+        </button>
+        </fieldset>
+      </form>
+    </div>
+    <a href="#top"> <img class="top" id="top" src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_arrow-up-128.png"</i> </a>
+    <section class="followMe">
+      <div id="social">
+      <a  class="a" href="https://www.linkedin.com/in/jeilymarbrady" title="Jeilymar Brady on Linkedin" target="_blank"><img id="linkedin" src="https://cdn3.iconfinder.com/data/icons/social-circle/512/social_7-128.png"></i></a>
+      <a  class="a" href="https://github.com/JeilymarBrady" title="Jeilymar Brady on GitHub" target="_blank"><img id="github" src="https://cdn0.iconfinder.com/data/icons/social-circle/595/github-128.png"></img></a>
+      <a  class="a" href="https://facebook.com/JeilymarBrady" title="Jeilymar Brady on Facebook" target="_blank"><img id="facebook" src="https://cdn3.iconfinder.com/data/icons/social-circle/512/social_3-128.png"></i></a>
+      <a  class="a" href="https://twitter.com/JeilymarBrady" title="Jeilymar Brady on Twitter" target="_blank"><img id="twitter" src="https://cdn3.iconfinder.com/data/icons/social-circle/512/social_8-128.png"></i></a>
+      <a  class="a" href="jeilymarb@gmail.com" title="Send Jeilymar Brady an E-Mail" target="_blank"><img id="email" src="https://cdn3.iconfinder.com/data/icons/social-circle/512/647403-email-128.png"></i></a>
+    <!-- </div> -->
+    </section>
+  </section>
+</section>
+  <script type="text/javascript" src="js/main.js"></script>
+ </body>
+</html>
+
+<!-- Website
+Fixed header with smooth scroll links to section and top
+Picture of me with short bio; small bouncing down arrow
+Links to projects with blurred images and title overlaying in white; smooth scroll to section
+Final stats project
+Resume
+Final CodeFellows
+Mid CodeFellows
+Research from first semester in stats and research methods
+website itself (wireframes, tools like sass)
+[JS to hide sections until click of picture, header, or section holder itself; remember to hide again once another is clicked OR keep until re-click of section holder]
+Contact me form
+need back-end
+Social media links
+overall GitHub; every project can lead to its respective git page
+F, T, I, Email
+Back to top button on BR corner (donut shop)  -->
