@@ -7,7 +7,8 @@ body {
 
 * {
   font-family: Avenir;
-  color: #E05151; }
+  color: #E05151;
+  border: none !important; }
 
 body, html, .fullPage {
   height: 100%; }
@@ -44,10 +45,6 @@ a {
 #list:hover {
   color: white; }
 
-/*.name .headerItems{
-  color: #E05151;
-  margin: .5em 1em;
-}*/
 li {
   display: inline-block;
   list-style: none;
@@ -110,49 +107,162 @@ li {
     background-color: white; } }
 /*About*/
 .aboutMe {
-  z-index: -1;
+  /*z-index: 1;*/
   background-color: white;
-  height: 90.8%;
+  height: 92%;
   border: 2px solid orange; }
 
+.aboutContainer {
+  padding-top: 11%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center; }
+
+.aboutItem1, .aboutItem2, .aboutItem3 {
+  position: relative;
+  align-self: auto;
+  padding: 0 2%;
+  width: 28%;
+  text-align: center; }
+
 .logo {
-  background-image: url("./../images/favicon.png");
-  width: 100px;
-  height: 100px; }
+  width: 30em;
+  height: 30em; }
+
+.logo:hover {
+  -webkit-transform: scale(1.25);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.25);
+  /* Firefox */
+  -ms-transform: scale(1.25);
+  /* IE 9 */
+  -o-transform: scale(1.25);
+  /* Opera */
+  transform: scale(1.25); }
 
 /*Resume*/
+.details {
+  float: left;
+  margin-left: 0;
+  color: #333333 !important; }
+
 .resume {
-  /*z-index: 10;*/
+  padding-left: 33em;
   background-color: #E05151;
-  height: 90.8%;
+  height: 92%;
   border: 2px solid blue; }
 
 /*Portfolio*/
-.portfolio {
-  /*z-index: 10;*/
+.portfolioContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 92%;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
   background-color: #333333;
-  height: 90.8%;
-  border: 2px solid green; }
+  /*margin: 0 auto;*/
+  text-align: center;
+  position: relative; }
+
+.portfolioContainer div {
+  background-color: #333333;
+  width: 100%;
+  height: 92%;
+  display: inline-block;
+  display: none;
+  /*z-index: 0;*/ }
+
+.next, .prev {
+  background: none;
+  z-index: 1;
+  position: absolute;
+  margin-top: 25%;
+  /*background: none;*/
+  width: 7em;
+  height: 7em; }
+
+.next {
+  float: right;
+  right: .5em; }
+
+.prev {
+  left: .5em; }
+
+.next img, .prev img {
+  max-height: 100%;
+  max-width: 100%; }
 
 /*Contact*/
 .contact {
   background-color: white;
-  height: 90.8%;
-  border: 2px solid yellow; }
+  height: 81.5%;
+  /*border: 2px solid yellow;*/ }
+
+legend {
+  font-size: 25px; }
 
 .email_form {
   margin: 1.5em auto;
   width: 40%;
   color: #F3843E;
+  text-align: center;
+  margin-top: 6em; }
+
+/* button */
+#wrap {
   text-align: center; }
+
+.btn-box {
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  cursor: default;
+  font-size: 11px;
+  font-family: 'Open Sans', Helvetica, Arial, 'Liberation Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 16px;
+  height: 27px;
+  line-height: 27px;
+  min-width: 54px;
+  outline: 0;
+  padding: 0 8px; }
+
+.btn-pos {
+  position: relative;
+  display: inline-block; }
+
+.btn-gradient {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #E05151;
+  background-image: -webkit-linear-gradient(top, #E05151);
+  background-image: linear-gradient(top, #E05151);
+  border: 1px solid #333333;
+  color: #333333; }
+
+.btn-gradient:hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #E05151;
+  background-image: -webkit-linear-gradient(top, #333333, #333333);
+  background-image: linear-gradient(top, #333333, #333333);
+  border: 1px solid #33;
+  border-bottom-color: #E05151;
+  color: #E05151; }
 
 /*Follow*/
 .followMe {
-  margin-left: 40.5em; }
+  margin-left: 40.5em;
+  margin-top: 2em; }
 
 #social {
   display: inline-block;
-  margin-bottom: 2em;
   width: 100%; }
 
 a.a {
