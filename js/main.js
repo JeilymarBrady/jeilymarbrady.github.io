@@ -1,4 +1,7 @@
 //////////////////////////////
+console.log("88       88 88888888 88         88888    88888   8888   8888 88888888 88\n88       88 88       88        88   88  88   88  88 88 88 88 88       88\n88       88 88       88       88       88     88 88  888  88 88       88\n88  888  88 88888    88       88       88     88 88       88 88888    88\n88 88 88 88 88       88        88   88  88   88  88       88 88\n8888   8888 88888888 88888888   88888    88888   88       88 88888888 88");
+
+//////////////////////////////
 function addLoadEvent(func) {
   var oldonload = window.onload;
   if (typeof window.onload != 'function') {
@@ -46,15 +49,13 @@ $(document).ready(function() {
   var target = $(this).attr("href"); //Get the target
 
   // perform animated scrolling by getting top-position of target-element and set it as scroll target
-  $('html, body').stop().animate({ scrollTop: $(target).offset().top - 69.5}, 1500, function() {
+  $('html, body').stop().animate({ scrollTop: $(target).offset().top - 60}, 1500, function() {
        //location.hash = target; //attach the hash (#jumptarget) to the pageurl
   });
 
   return false;
    });
 });
-//////////////////////////////
-
 
 //////////////////////////////
 // Portfolio Slides
@@ -69,12 +70,13 @@ function cycleItems() {
 }
 
 var autoSlide = setInterval(function() {
-  currentIndex += 1;
   if (currentIndex > itemAmt - 1) {
     currentIndex = 0;
   }
   cycleItems();
-}, 3000);
+  currentIndex += 1;
+  console.dir($('.portfolioContainer div'));
+}, 2500);
 
 $('.next').click(function() {
   clearInterval(autoSlide);
@@ -93,4 +95,56 @@ $('.prev').click(function() {
   }
   cycleItems();
 });
+
+$('.mainMenu').click(function() {
+  clearInterval(autoSlide);
+  console.dir($('.portfolioContainer div'));
+  currentIndex = 0;
+  cycleItems();
+  console.log(currentIndex);
+});
+//////////
+$('.slide1').click(function() {
+  clearInterval(autoSlide);
+  currentIndex = 1;
+  cycleItems();
+});
+
+$('.slide2').click(function() {
+  clearInterval(autoSlide);
+  currentIndex = 2;
+  cycleItems();
+});
+
+$('.slide3').click(function() {
+  clearInterval(autoSlide);
+  currentIndex = 3;
+  cycleItems();
+});
+
+$('.slide4').click(function() {
+  clearInterval(autoSlide);
+  currentIndex = 4;
+  cycleItems();
+});
+
+$('.slide5').click(function() {
+  clearInterval(autoSlide);
+  currentIndex = 5;
+  cycleItems();
+});
+
+$('.slide6').click(function() {
+  clearInterval(autoSlide);
+  currentIndex = 6;
+  cycleItems();
+});
 //////////////////////////////
+$('.imgTop').hover(function(){
+  // $(this).transition('0.5s');
+  $(this).width('auto');
+  $(this).height('auto');
+  }, function(){
+    $(this).width('300px');
+    $(this).height('300px');
+});

@@ -3,7 +3,8 @@ body {
   background: white;
   color: black;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  /*font-family: Avenir;*/ }
 
 * {
   font-family: Avenir;
@@ -11,7 +12,8 @@ body {
   border: none !important; }
 
 body, html, .fullPage {
-  height: 100%; }
+  height: 100%;
+  font-family: Avenir light; }
 
 /*Nav Bar*/
 .header {
@@ -32,9 +34,11 @@ body, html, .fullPage {
   margin: 0 0 0 .5em;
   color: #E05151; }
 
-a {
-  text-decoration: none;
-  border: 0; }
+.header a {
+  text-decoration: none; }
+
+.nameA {
+  font-family: Avenir !important; }
 
 .headerItems {
   color: #E05151; }
@@ -48,7 +52,7 @@ a {
 li {
   display: inline-block;
   list-style: none;
-  padding: .5em;
+  padding: .3em;
   font-size: 18px; }
 
 /*Main*/
@@ -58,7 +62,8 @@ li {
   padding-bottom: 1em;
   text-align: center;
   color: #E05151;
-  height: 75.5%; }
+  height: 76%;
+  font-family: Avenir; }
 
 #me {
   border-radius: 20em;
@@ -109,7 +114,7 @@ li {
 .aboutMe {
   /*z-index: 1;*/
   background-color: white;
-  height: 92%;
+  height: 93%;
   border: 2px solid orange; }
 
 .aboutContainer {
@@ -153,7 +158,7 @@ li {
 .resume {
   padding-left: 33em;
   background-color: #E05151;
-  height: 92%;
+  height: 93%;
   border: 2px solid blue; }
 
 /*Portfolio*/
@@ -161,7 +166,7 @@ li {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 92%;
+  height: 93%;
   flex-wrap: wrap;
   align-content: space-around;
   align-items: center;
@@ -173,7 +178,7 @@ li {
 .portfolioContainer div {
   background-color: #333333;
   width: 100%;
-  height: 92%;
+  height: 93%;
   display: inline-block;
   display: none;
   /*z-index: 0;*/ }
@@ -185,7 +190,9 @@ li {
   margin-top: 25%;
   /*background: none;*/
   width: 7em;
-  height: 7em; }
+  height: 7em;
+  cursor: pointer;
+  z-index: 1; }
 
 .next {
   float: right;
@@ -198,17 +205,185 @@ li {
   max-height: 100%;
   max-width: 100%; }
 
+.slides {
+  /*padding-top: 11%;*/
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  align-items: center;
+  text-align: center;
+  position: relative; }
+
+.slides section {
+  position: relative;
+  align-self: auto;
+  height: 100%;
+  text-align: left; }
+
+.slideMain {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 8%;
+  justify-content: space-around; }
+
+#mainP {
+  width: 80%;
+  float: left;
+  margin-left: 6em; }
+
+#mainP img {
+  height: 300px;
+  width: 300px;
+  padding: 2%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out; }
+
+/*
+.slide1Main:hover{
+  content: url(./../images/slide1B.png);
+}
+
+.slide2Main:hover{
+  content: url(./../images/slide2B.png);
+}
+
+.slide3Main:hover{
+  content: url(./../images/slide3B.png);
+}
+
+.slide4Main:hover{
+  content: url(./../images/slide4B.png);
+}
+
+.slide5Main:hover{
+  content: url(./../images/slide5B.png);
+}
+
+.slide6Main:hover{
+  content: url(./../images/slide6B.png);
+}*/
+/*.card-container {
+  cursor: pointer;
+  perspective: 600;
+  position: relative;
+  width: 300px;
+  padding: 2%;
+  height: 300px;
+}
+
+.card {
+  height: 300px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 300px;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card .back {
+  background: transparent;
+  color: #F0A800;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+}*/
+.slides {
+  height: 100%;
+  width: 100%;
+  z-index: 0; }
+
+.leftP {
+  width: 30%;
+  padding-left: 7em;
+  float: left;
+  margin-left: 6em;
+  z-index: 999; }
+
+.leftP img {
+  margin-left: 1em;
+  width: 300px;
+  height: 300px; }
+
+.sectionTop {
+  max-height: 300px;
+  max-width: 300px;
+  z-index: 999; }
+
+.imgTop {
+  margin-top: 3em;
+  border-radius: .3em;
+  transition: all 0.5s; }
+
+.imgTop:hover {
+  transition: all 0.5s;
+  max-height: 650px; }
+
+.sectionBtm {
+  max-width: 300px;
+  max-height: 300px;
+  z-index: 1;
+  /*margin-top: 2em;*/ }
+
+.rightP {
+  width: 50%;
+  float: right;
+  margin-right: 6em;
+  z-index: 1; }
+
+.rightPTop {
+  max-height: 80%;
+  /*background-color: orange;*/ }
+
+.rightP h3, .rightPTop h3 {
+  color: white;
+  text-align: center;
+  font-family: Avenir; }
+
+.rightP p, .rightPTop p, .rightPBtm p {
+  font-size: 20px; }
+
+.rightPBtm {
+  max-height: 15%;
+  display: inline; }
+
+.rightPBtm p {
+  float: left; }
+
+.portfolioGit {
+  padding-left: 2em;
+  z-index: 2; }
+
+.backToMain {
+  height: 100px;
+  width: 100px;
+  float: right;
+  cursor: pointer; }
+
 /*Contact*/
 .contact {
   background-color: white;
-  height: 81.5%;
-  /*border: 2px solid yellow;*/ }
+  height: 81.5%; }
 
 legend {
   font-size: 25px; }
 
 .email_form {
-  margin: 1.5em auto;
+  margin: 3em auto;
+  padding-top: 3em;
   width: 40%;
   color: #F3843E;
   text-align: center;
@@ -218,7 +393,7 @@ legend {
 #wrap {
   text-align: center; }
 
-.btn-box {
+.btn {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   cursor: default;
@@ -231,13 +406,7 @@ legend {
   line-height: 27px;
   min-width: 54px;
   outline: 0;
-  padding: 0 8px; }
-
-.btn-pos {
-  position: relative;
-  display: inline-block; }
-
-.btn-gradient {
+  padding: 0 8px;
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: #E05151;
@@ -246,7 +415,7 @@ legend {
   border: 1px solid #333333;
   color: #333333; }
 
-.btn-gradient:hover {
+.btn:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
   background-color: #E05151;
